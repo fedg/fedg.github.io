@@ -1,2 +1,3 @@
-# fedg.github.io
-My portfolio site
+##My Portfolio Site
+------
+View at: [fedg.io](http://fedg.io)
