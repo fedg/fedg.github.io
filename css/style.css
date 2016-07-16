@@ -33,7 +33,7 @@ p {
   line-height: 2rem;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Noto Serif', sans-serif;
   font-size: 2.5rem;
   letter-spacing: 1px;
@@ -56,7 +56,7 @@ ul li {
 }
 
 section {
-  padding: 12% 25% 12% 15%;
+  padding: 12% 20% 12% 15%;
   margin: 0;
 }
 
@@ -78,7 +78,7 @@ section {
     padding: 8% 10%;
   }
 
-  h1 {
+  h1, h2 {
       font-size:2rem;
       line-height: 3.5rem;
   }
@@ -90,7 +90,7 @@ section {
     padding: 12%;
   }
 
-  h1 {
+  h1, h2 {
     font-size: 1.3rem;
     line-height: 2.3rem;
     margin-bottom: 2rem;
