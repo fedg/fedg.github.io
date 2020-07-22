@@ -44,13 +44,13 @@ h1, h2 {
 h4 {
   font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #1A237E;
+  color: #E8EAF6;
   letter-spacing: 3px;
   margin-bottom: 70px;
 }
 
 ul li {
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
   display: inline-block;
 }
