@@ -23,7 +23,7 @@ Neutral
 A0: #717171
 A1: #222222
 
- */
+*/
 
  @keyframes fadeInDown {
    0% {
@@ -38,7 +38,7 @@ A1: #222222
  }
 
 
-html, body {
+html {
   background: #304FFE;
   color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
@@ -48,10 +48,15 @@ html, body {
   font-size: 6px;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 5vw;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
   font-size: 3rem;
   line-height: 5rem;
 }
@@ -74,93 +79,74 @@ a:hover, a:focus {
   border-bottom: 1px solid #8C9EFF;
 }
 
-p {
-  animation: fadeInDown .6s ease-in-out .3s forwards;
-  font-weight: 400;
-  line-height: 5rem;
-  margin-bottom: 4rem;
-}
-
-h1, h2 {
-  animation: fadeInDown .6s ease-in-out .3s forwards;
-  font-family: 'Noto Serif', sans-serif;
-  font-size: 7rem;
-  line-height: 10rem;
-  margin-bottom: 18rem;
-}
-
-h4 {
+.name {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 3px;
-  margin-bottom: 10rem;
+  margin-top: 17rem;
 }
 
-ul li {
+.intro {
   animation: fadeInDown .6s ease-in-out .3s forwards;
+  flex: 1;
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 7rem;
+  line-height: 10rem;
+  margin-left: -.5rem;
+  margin-top: 10rem;
+  margin-bottom: 18rem;
+}
+
+.about {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  margin-bottom: 4rem;
+}
+
+.socials {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  padding-bottom: 17rem;
+}
+
+.socials li {
   margin-right: 2rem;
   margin-bottom: 2rem;
   display: inline-block;
 }
 
-section {
-  padding: 0 15%;
-  margin: 0;
-}
-
-.container {
-  height: 100%;
-  -webkit-display: -webkit-box;
-  -webkit-display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 @media screen and (max-width: 50em) {
-  section {
-    padding: 8% 10%;
-  }
-
-  h1, h2 {
-      font-size: 6rem;
-      line-height: 10rem;
-  }
-}
-
-@media screen and (max-width: 30em) {
-
-  section {
-    padding: 0 10%;
-  }
-
   body {
+    padding: 0 3rem;
+  }
+
+  .name {
     font-size: 2rem;
+    margin-top:5rem;
   }
 
-  p {
-    margin-bottom: 2rem;
-  }
-
-  h1, h2 {
-    font-size: 4rem;
+  .intro {
+    font-size: 5rem;
     line-height: 7rem;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
-  h4 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  .about {
+    font-size: 3rem;
+    margin-bottom: 4rem;
   }
 
-  ul li {
+  .socials {
+    padding-bottom: 4rem;
+  }
+
+  .socials li {
     margin-bottom: 0;
   }
+
 }
